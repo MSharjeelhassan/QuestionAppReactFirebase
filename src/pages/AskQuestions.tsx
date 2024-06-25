@@ -31,13 +31,13 @@ setData({...data, [name]:value})
       timeStamp:JSON.stringify(new Date())
     }
     // console.log(obj)
+    // here we are sending data i.e the object to the firebase realtime database.
+    sendData('sawalYehHy',obj )
 
     setData({username:'',
       email:'',
       message:''});
-
-      // here we are sending data i.e the object to the firebase realtime database.
-    sendData('sawalYehHy',obj )
+      
   };
 
 
